@@ -1,0 +1,28 @@
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+.ourstory{
+    background-image: url('bar-blur-chairs-1819669.jpg');
+    background-size: 300px 500px;
+    background: cover;
+    border: 1px solid white;
+    height: 500px;
+    width: 300px ;
+}
+.label{
+    font-size: 20px;
+}
+.reservations{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+input{
+    height: 30px;
+    width: 200px;
+}
