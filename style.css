@@ -1,3 +1,29 @@
+
+.container {
+  margin: auto;
+}
+header {
+  background-image: url("./imgs/adult-alcohol-bar-274192.jpg");
+  width: auto;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -200px;
+}
+.logo {
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  background: red;
+  justify-content: space-evenly;
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-evenly;
+
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,4 +51,5 @@ html{
 input{
     height: 30px;
     width: 200px;
+
 }
