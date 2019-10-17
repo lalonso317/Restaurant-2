@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
       <header>
-        <h1 class="logo">BAR</h1>
+        <div class="social-media">
+          <div class="facebook"><i class="fa fa-facebook"></i></div>
+          <div class="twiiter"><i class="fa fa-twitter"></i></div>
+          <div class="instagram"><i class="fa fa-instagram"></i></div>
+        </div>
+
+        <h1 class="logo">PUB-DAWG-BAR</h1>
       </header>
-      <div class="social-media">
-        <div class="facebook">Fb</div>
-        <div class="twiiter">twiiter</div>
-        <div class="instagram">INSTA</div>
-        <div class="yelp">yelp</div>
-      </div>
+
       <div class="menu-bar">
-        <div>home</div>
-        <div>menu</div>
-        <div>about us</div>
-        <div>gallary</div>
-        <div>contact</div>
+        <div>Home</div>
+        <div>Menu</div>
+        <div>Our Story</div>
+        <div>Gallary</div>
+        <div>Contact</div>
       </div>
+
   
     <main>
         <div id="mainbody">
@@ -50,31 +54,31 @@
             <h3>RESERVATIONS</h3>
             <label name="label"class="label" for="fname">Full Name</label>
             <input class="fullname" name="fname">
+
             <label name="guests#" class="label">Number of Guests</label>
-            <input for="guest" name="guests#">
+            <input for="guest" name="guests#" />
             <label name="date" class="label">Date</label>
-            <input name="date" class="datebox">
+            <input name="date" class="datebox" />
             <label class="label" name="text">Special Notes</label>
             <textarea name="text" class="spe"></textarea>
             <label name="seating" class="label">Choice of Seating</label>
             <select name="seating" id="seatpref">
-                <option value="choice">Please Select One</option>
-                <option value="booth">Booth</option>
-                <option value="table">Table</option>
-                <option value="outdoor">Outdoor</option>
+              <option value="choice">Please Select One</option>
+              <option value="booth">Booth</option>
+              <option value="table">Table</option>
+              <option value="outdoor">Outdoor</option>
             </select>
+          </div>
         </div>
-        </div>
-    </main>
-    <footer></footer>
-
-
+      </main>
+      <footer></footer>
+    </div>
 
     <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-   <script src="main.js"></script>
-
-</body>
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
 </html>
