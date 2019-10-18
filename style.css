@@ -1,4 +1,3 @@
-
 html {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
@@ -10,31 +9,69 @@ html {
 }
 /* contain */
 
-
 .container {
   margin: auto;
 }
 /* header */
 header {
-  background-image: url("./imgs/adult-alcohol-bar-274192.jpg");
+  background-image: url("./imgs/alcohol-bar-bartender-274194.jpg");
+
   width: auto;
   height: 700px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -200px;
+  background-position-y: 0px;
   margin: 0;
+}
+#trio-box {
+  display: flex;
+  justify-content: center;
+}
+.left-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  margin: 0px 20px;
+}
+.TELE {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.418);
+  height: 40px;
+  padding: 10px 10px;
+}
+.topbutton {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.418);
+  height: 40px;
+  padding: 10px 10px;
+}
+.right-box {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+  margin: 0px 20px;
 }
 
 /* logo */
+#center-name {
+  display: flex;
+  justify-content: center;
+  padding: 240px 0px;
+  color: white;
+  font-size: 60px;
+}
 .logo {
   display: flex;
   justify-content: center;
   color: white;
-  padding: 200px 0px;
-  font-size: 70px;
+  font-size: 60px;
 }
-
-
 
 .social-media {
   display: flex;
@@ -81,54 +118,80 @@ header {
   display: flex;
   justify-content: space-evenly;
 
-  background: rgba(179, 50, 59, 0.877);
+  background: rgb(238, 50, 62);
   height: 50px;
   padding: 15px 0px;
 }
+#BAR-HOME {
+  font-size: 20px;
+}
+#BAR-HOME:hover {
+  color: WHITE;
+}
 
-
+#BAR-MENU {
+  font-size: 20px;
+}
+#BAR-MENU:hover {
+  color: WHITE;
+}
+#BAR-STORY {
+  font-size: 20px;
+}
+#BAR-STORY:hover {
+  color: WHITE;
+}
+#BAR-GAL {
+  font-size: 20px;
+}
+#BAR-GAL:hover {
+  color: WHITE;
+}
+#BAR-CON {
+  font-size: 20px;
+}
+#BAR-CON:hover {
+  color: WHITE;
+}
 /* /////////////// */
 /* ///BODY TABS/// */
 /* ////////////////*/
 
-.ourstory{
-    background-image: url('./imgs/bar-blur-chairs-1819669.jpg');
-    background-size: 300px 500px;
-    background: cover;
-    color: white;
-    margin: 20px 0px;
-    border: 1px solid black;
-    height: 500px;
-    width: 300px ;
+.ourstory {
+  background-image: url("./imgs/bar-blur-chairs-1819669.jpg");
+  background-size: 300px 500px;
+  background: cover;
+  color: white;
+  margin: 20px 0px;
+  border: 1px solid black;
+  height: 500px;
+  width: 300px;
 }
-#pagebreak1{
-  background-image: url('./imgs/alcoholic-beverages-bar-beer-63633.jpg');  
+#pagebreak1 {
+  background-image: url("./imgs/alcoholic-beverages-bar-beer-63633.jpg");
 }
-.Menu{
+.Menu {
   border: 1px solid black;
   width: 400px;
-  height: 400px;;
-
+  height: 400px;
 }
-.label{
-    font-size: 20px;
+.label {
+  font-size: 20px;
 }
-.reservations{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 500px;
-    border: 1px black solid; 
+.reservations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  border: 1px black solid;
 }
-input{
-    height: 30px;
-    width: 200px;
-    margin: 5px;
-
+input {
+  height: 30px;
+  width: 200px;
+  margin: 5px;
 }
-.spe{
+.spe {
   height: 70px;
   width: 400px;
   margin: 10px;
 }
-
