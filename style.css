@@ -196,13 +196,140 @@ input {
   margin: 10px;
 }
 
-
-
-
 /* /////////////// */
 /* //////MAP////// */
 
-#map{
+#map {
   width: 400px;
   height: 400px;
 }
+/* ///GALLARY/// */
+.Gal-pics {
+  display: flex;
+  justify-content: center;
+  
+}
+.mySlides {
+ width: 1000px;
+ height: 700  px;
+
+  
+}
+.w3box {
+  widows: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.w3-transparent {
+  background-color: rgba(179, 50, 59, 0.877);
+}
+.w3-badge {
+  border-radius: 30%;
+}
+.w3-border {
+  border: 1px solid black;
+}
+
+.w3-badge {
+  color: white;
+  justify-content: center;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+  text-align: center;
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+.w3-badge:hover {
+  background-color: white;
+}
+.w3-center{
+  
+  color:white;
+  height: 85px;
+  text-align: center;
+  line-height: 85px;
+ 
+
+}
+.w3-left {
+  background: black;
+  color:white;
+  float: left;
+  cursor: pointer;
+  height: 80px;
+  width: 30px;
+  line-height: 80px; 
+}
+.w3-right {
+  background: black;
+  color:white;
+  float: right;
+  cursor: pointer;
+  
+  height: 80px;
+  width: 30px;
+  line-height: 80px; 
+}
+
+/* FOOTER */
+footer{
+  height: 500px;
+  background: rgb(77, 64, 64);
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 200px 0px;
+  
+}
+
+.Z-logo{
+  color:white;
+}
+
+.Z-socialmedia {
+  display: flex;
+  
+}
+.facebook2 {
+  width: 38px;
+  height: 40px;
+  padding: 10px 12px;
+  background: rgba(179, 50, 59, 0.877);
+  font-size: 20px;
+  color: white;
+  margin: 0px 2px;
+  border-radius: 100%;
+}
+.facebook2:hover {
+  background: black;
+}
+.twiiter2 {
+  height: 40px;
+  padding: 10px 10px;
+  background: rgba(179, 50, 59, 0.877);
+  font-size: 20px;
+  color: white;
+  margin: 0px 2px;
+  border-radius: 100%;
+}
+
+.twiiter2:hover {
+  background: black;
+}
+.instagram2 {
+  height: 40px;
+  padding: 10px 10px;
+  background: rgba(179, 50, 59, 0.877);
+  font-size: 20px;
+  color: white;
+  margin: 0px 2px;
+  border-radius: 100%;
+}
+.instagram2:hover {
+  background: black;
+
