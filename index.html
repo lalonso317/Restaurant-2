@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>PUB_DAWG BAR</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -14,9 +15,9 @@
   <body>
     <div class="container">
       <header>
-        <div id="trio-box">
+          <div id="trio-box">
           <div class="left-box">
-            <button class="TELE">702-834-9900</button>
+            <button class="TELE" id="phone"><a>702-834-9900</a></button>
           </div>
           <div class="social-media">
             <div class="facebook"><i class="fa fa-facebook"></i></div>
@@ -28,27 +29,40 @@
           </div>
         </div>
         <div id="center-name">
-          <div>EST 2019</div>
+          <div clas="est">EST 2019</div>
           <h1 class="logo">PUB-DAWG-BAR</h1>
         </div>
       </header>
 
       <div class="menu-bar">
-        <div id="BAR-HOME"><a>HOME</a></div>
-        <div id="BAR-MENU"><a>MENU</a></div>
-        <div id="BAR-STORY"><a>OUR STROY</a></div>
-        <div id="BAR-GAL"><a>GALLARY</a></div>
-        <div id="BAR-CON"><a>CONTACT</a></div>
+        <div id="BAR-HOME"><a href="#phone">HOME</a></div>
+        <div id="BAR-STORY"><a href="#ourstory">OUR STORY</a></div>
+        <div id="BAR-MENU"><a href="#menu">MENU</a></div>
+        <div id="BAR-GAL"><a href="#gallary">GALLARY</a></div>
+        <div id="BAR-CON"><a href="#contact">CONTACT</a></div>
       </div>
 
       <main>
         <div id="mainbody">
-          <div class="ourstory">
-            <h3>OUR STORY</h3>
-
-            <p class="ourstorytext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil non ipsam hic sint reiciendis excepturi inventore. Architecto tempore suscipit corrupti asperiores eveniet corporis impedit nesciunt.</p>
-        </div>
+            <div class="contactus">
+                <div>
+                <p>Location</p> 
+                <p>200 S Main Street,<br> Las Vegas NV 89101</p>
+                </div>
+                <div>
+                <p>Hours Of Business</p>
+                <p>Mon - Tue: 1:30PM - 12AM</p>
+                <p>Wed-Sun: 1:30PM - 2:00AM</p>
+                </div>
+            </div>
+          <div class="ourstory" id="ourstory">
+            <p class="ourstorytext">The Pub-Dawg Bar, was a dream come true for life-long friends Mike and Ryan. From there roots, being born and raised in Las Vegas, Nevada it shaped their view on life. They always saw the dark skies filled with flashing lights from what was a small strip. However, the Las Vegas Strip was only a small drive away from these kids, but a big dream. They wanted to be working in their city, the one that would givr them a lifetime of memories. It was until they grew into adults they realized the heart and soul of this city was in downtown. Graduating from UNLV, they took on the challenge and it was to open a bar. The trek to creating Pub-Dawg Bar was a long ride. In the opening, it will a triumph of in completing the this mission, but starting a new journey.  </p>
+            <h3 class="ourstoryhead"><a href="ourstory">OUR STORY</a></h3>
+          </div>
         <div id="pagebreak1">
+            <video autoplay muted loop id='background' >
+                <source src="./imgs/coverr-beer-pouring-1563950200198.mp4" type="video/mp4">
+                </video>
         </div>
         <form id="menu" method="POST">
         <div class="Menu">
@@ -58,9 +72,10 @@
               <div></div>
 
             </div>
+          </div>
           </form>
           <div class="reservations">
-            <h3>RESERVATIONS</h3>
+            <h3 class="res"><a href="reservation">RESERVATIONS</a></h3>
             <label name="label" class="label" for="fname">Full Name</label>
             <input class="fullname" name="fname" />
 
@@ -79,13 +94,16 @@
             </select>
           </div>
         </div>
+       
       </main>
+      <div id="map">
+          <iframe width="500" class="realmap" height="400" frameborder="0" style="border:1"
+src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW3OOIKLDyIARm4EN55Uyg_c&key=AIzaSyCaaCWcczAfWmZYhzNIk2a1eWR2sk8__o0" allowfullscreen></iframe>
+          <img class="imgcontact"src="./imgs/bar-blur-chairs-1819669.jpg">
+        </div>
       <footer></footer>
     </div>
 
-    <div id="map">
-      
-    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
