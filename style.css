@@ -33,7 +33,7 @@ header {
   width: auto;
   height: 765px;
   margin: 0;
-  background-image: url(./imgs/alcohol-bar-bartender-274194.jpg);
+  background-image: url(./imgs/barbar5.png);
 }
 
 #trio-box {
@@ -180,6 +180,12 @@ height: 5000px;
   border: 2px  #FF959C  solid;
   ;
 }
+/* NEWSS */
+.news {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+ }
 
 /* OUR STORY */
 /* ///////// */
@@ -197,8 +203,8 @@ height: 5000px;
   margin: 50px;
   position: absolute;
   display: flex;
-  top:255px;
-  left:150px;
+  top:385px;
+  left:400px;
   z-index: 3;
   box-shadow: lightcoral 10px 10px 10px 10px;
 }
@@ -221,8 +227,8 @@ height: 5000px;
   width: 900px;
   height:600px;
   position: absolute;
-  left:270px;
-  top: 869px;
+  left:500px;
+  top: 969px;
   border: 3px solid black;
   border-radius: 10px;
   background: black;
@@ -235,6 +241,7 @@ height: 5000px;
   height: 800px;
   position: absolute;
   top:1715px;
+  left: 650px;
   background-color: #717171;
   background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%); 
 }
@@ -243,13 +250,14 @@ height: 5000px;
 .reservations {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   align-items: flex-start;
   width: 500px;
   height: auto;
   border: 2px black solid;
   background: #E5B5B8;
   top: 2700px;
+  left: 700px;
 }
 
 .label {
@@ -305,12 +313,12 @@ input {
 .map{
   position: absolute;
   background: black;
-  width: 900px;
-  height: 405px;
+  width: 1000px;
+  height: 410px;
   margin: 100px;
   border: 3px solid black;
-  top: 4200px;
-  left: 175px;
+  top: 4300px;
+  left: 415px;
 
 }
 .realmap{
@@ -330,7 +338,7 @@ input {
   justify-content: center;
   position: absolute;
   top: 5000px;
-  left:230px;
+  left:500px;
 }
 .mySlides {
  width: 1000px;

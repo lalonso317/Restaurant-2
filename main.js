@@ -18,25 +18,7 @@ var html = `<div class="appetizers"> </div>`
     $('.appetizers').html(html)
   })
 }) 
-  // const html = `
-  //   price: ${price},
-  //   name: ${name},
-  //   description: ${description},
-  //   extra: ${extra}
-  // `
-  // $('#appetizers').html(html)
-  //  app.map(item =>{
-  //     `
-  //     <p class="">${name}</p>
-  //     <p class="apppri">${price}</p>
-  //     <p class="appdescr">${description}</p>
-  //     <p class="appext">${extra}</p>
-  //   `
-
-// .join('')
-
-
-
+ 
 
 
 var slideIndex = 1
