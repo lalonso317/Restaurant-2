@@ -1,34 +1,23 @@
+$(document).ready(function(){ 
+  $.get('https://obscure-tundra-54269.herokuapp.com/bar-food').done(function(data) {
+    var app = data.appetizers
+    var entre = data.entre 
+    var des = data.desserts
 
-$(document).ready(function(){
-  $('#menu').on('load',function(e){
-    e.preventDefault()
-  var app = data.appetizers
-  var entre = data.entre 
-  var des = data.desserts
-    
+var html = `<div class="appetizers"> </div>`
 
-  $.get('https://obscure-tundra-54269.herokuapp.com/bar-food' + app).done(function(data) {
-     const result = data.result[0]
-  const price = result.price
-  const name = result.name
-  const description = result.description
-  const extra = result.extra
-    
-     const html = $('appetizers').map(item =>{
-      
-      `
-      <p class="appname">name: ${name}</p>
-      <p class="apppri">price: ${price}</p>
-      <p class="appdescr">description: ${description}</p>
-      <p class="appext">extra: ${extra}<p>
+      html += app.map(ap => {
+      return `
+      <p class="appname">name: ${ap.name}</p>
+      <p class="apppri">price: ${ap.price}</p>
+      <p class="appdescr">description: ${ap.description}</p>
+      <p class="appext">extra: ${ap.extra}<p>
   `
   console.log(html)
     }).join('')
-    return $('.appertizers').html(html)
-    
+    $('.appetizers').html(html)
   })
 }) 
-})
   // const html = `
   //   price: ${price},
   //   name: ${name},
