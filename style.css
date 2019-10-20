@@ -19,7 +19,6 @@ html {
   margin: 0;
   align-content: center;
   width: auto;
-
   height: 3000px;
   background-color: #717171;
   background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%);
@@ -261,10 +260,8 @@ height: 5000px;
   margin: 50px;
   position: absolute;
   display: flex;
-
   top:255px;
   left:150px;
-
   z-index: 3;
   box-shadow: lightcoral 10px 10px 10px 10px;
 }
@@ -286,7 +283,6 @@ height: 5000px;
   z-index: 0;
   width: 900px;
   height:600px;
-
   position: absolute;
   left:270px;
   top: 869px;
@@ -390,7 +386,6 @@ input {
 
 .map{
   position: absolute;
-
   background: black;
   width: 900px;
   height: 405px;
