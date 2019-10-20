@@ -311,7 +311,8 @@ input {
 
 
 .map{
-  position: absolute;
+  postion: absolute;
+    position: absolute;
   background: black;
   width: 1000px;
   height: 410px;
