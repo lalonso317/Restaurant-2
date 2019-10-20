@@ -22,7 +22,6 @@ html {
   height: 3000px;
   background-color: #717171;
   background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%);
-
   position: static;
 
 }
@@ -185,7 +184,6 @@ header {
 #BAR-MENU:hover a {
   color: white;
   cursor: pointer;
-
   font-size: 21px;
 }
 #BAR-STORY:hover a {
@@ -203,9 +201,6 @@ header {
   color: white;
   cursor: pointer;
   font-size: 21px;
-
- 
-
 }
 
 /* /////////////// */
@@ -214,35 +209,34 @@ header {
 
 
 #mainbody{
-
 position: relative;
 background-color: #949494;
 background-image: linear-gradient(180deg, #949494 0%, #ff4a4a 91%);
 height: 5000px;
-
 }
 .contactus {
   position: absolute;
   display: flex;
-
   left: 530px;
   top:20px;
-
   width: 700px;
   text-align: center;
   color: white;
   font-size: 22px;
-
-
   line-height: 20px;;
   justify-content: space-around;
   margin: 15px;
   background: black;
   border-radius: 20px;
   border: 2px  #FF959C  solid;
-  ;
-
 }
+
+/* NEWSS */
+.news {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+ }
 
 /* OUR STORY */
 /* ///////// */
@@ -260,8 +254,8 @@ height: 5000px;
   margin: 50px;
   position: absolute;
   display: flex;
-  top:255px;
-  left:150px;
+  top:385px;
+  left:400px;
   z-index: 3;
   box-shadow: lightcoral 10px 10px 10px 10px;
 }
@@ -284,8 +278,8 @@ height: 5000px;
   width: 900px;
   height:600px;
   position: absolute;
-  left:270px;
-  top: 869px;
+  left:500px;
+  top: 969px;
   border: 3px solid black;
   border-radius: 10px;
   background: black;
@@ -305,6 +299,7 @@ height: 5000px;
   font-size: 20px;
 
   top:1715px;
+  left: 650px;
   background-color: #717171;
   background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%); 
 
@@ -314,7 +309,7 @@ height: 5000px;
 .reservations {
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: relative;
   align-items: flex-start;
   width: 500px;
   height: auto;
@@ -322,11 +317,11 @@ height: 5000px;
   border: 2px black solid;
   background: #E5B5B8;
   top: 2700px;
+  left: 700px;
 }
 
 .label {
   font-size: 20px;
-
 }
 input {
   height: 30px;
@@ -381,22 +376,15 @@ input {
   width: 500px;
   height: 700px;
 }
-
-
-
 .map{
   position: absolute;
   background: black;
-  width: 900px;
-  height: 405px;
+  width: 1000px;
+  height: 410px;
   margin: 100px;
   border: 3px solid black;
-
-
-  top: 4200px;
-  left: 175px;
-
-
+  top: 4300px;
+  left: 415px;
 }
 .realmap {
   border-right: 3px solid black;
@@ -421,7 +409,7 @@ input {
 
   position: absolute;
   top: 5000px;
-  left:230px;
+  left:500px;
 }
 .mySlides {
  width: 1000px;
