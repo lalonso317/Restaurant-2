@@ -44,12 +44,13 @@
         <div id="BAR-CON"><a href="#contact">CONTACT</a></div>
       </div>
 
-      <main>
+      <main> 
         <div id="mainbody">
             <div class="contactus">
                 <div>
                 <p>Location</p> 
                 <p>200 S Main Street,<br> Las Vegas NV 89101</p>
+                <p id="reser"><a href="#reservations">Click Here For Reservations</a></p>
                 </div>
                 <div>
                 <p>Hours Of Business</p>
@@ -68,19 +69,32 @@
         </div>
         <form id="menu" method="POST">
         <div class="Menu">
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div class="appetizers">
+                <p class="appname"></p>
+                <p class="apppri"></p>
+                <p class="appdescr"></p>
+                <p class="appext"></p>
+              </div>
+              <div class="entrees">
+                <p class="entrname"></p>
+                <p class="entpri"></p>
+                <p class="entdescr"></p>
+                <p class="entext"></p>
+              </div>
+              <div class="desserts">
+                <p class="desname"></p>
+                <p class="despri"></p>
+                <p class="desdescr"></p>
+                <p class="desext"></p>
+              </div>
 
             </div>
-          </div>
           </form>
+      
           <div class="reservations">
-            <h3 class="res"><a href="reservation">RESERVATIONS</a></h3>
+            <h3 class="res" id="reservations">RESERVATIONS</h3>
             <label name="label" class="label" for="fname">Full Name</label>
             <input class="fullname" name="fname" />
-
             <label name="guests#" class="label">Number of Guests</label>
             <input for="guest" name="guests#" />
             <label name="date" class="label">Date</label>
@@ -94,21 +108,18 @@
               <option value="table">Table</option>
               <option value="outdoor">Outdoor</option>
             </select>
-          </div>
-        </div>
-       
+            <label class="label"for="tele" name="tele">Phone Number</label>
+            <input type="tel" name="tele" id="telephone">
+            <button type="submit" class="submit">Submit</button>
+          </div>   
       </main>
-      <div id="map">
+      <div class="map">
           <iframe width="500" class="realmap" height="400" frameborder="0" style="border:1"
 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW3OOIKLDyIARm4EN55Uyg_c&key=AIzaSyCaaCWcczAfWmZYhzNIk2a1eWR2sk8__o0" allowfullscreen></iframe>
           <img class="imgcontact"src="./imgs/bar-blur-chairs-1819669.jpg">
         </div>
     
-  
-
-
-  
-
+  <!-- THE IMAGE SLIDER -->
 
   <div class="Gal-pics">
       <div class="w3-content w3-display-container" >
@@ -136,8 +147,8 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJW3OOIKLDyIARm4EN5
 
     <footer>
       
-       <div class="Z-address">322 east paces ferry <br>
-         atlanta, las vegas 89102<br>
+       <div class="Z-address">200 S Main St
+        Las Vegas, NV 89101<br>
          (703)-403-2333<br>
         
 
