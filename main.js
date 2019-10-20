@@ -1,3 +1,4 @@
+
 $(document).ready(function(){ 
   $.get('https://obscure-tundra-54269.herokuapp.com/bar-food').done(function(data) {
     var app = data.appetizers
