@@ -25,7 +25,7 @@ $(document).ready(function(){
   console.log(html)
     }).join('')
     return $('.appertizers').html(html)
- 
+    
   })
 }) 
 })
