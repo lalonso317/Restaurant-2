@@ -1,27 +1,54 @@
 
-$(document).ready(function() {
-  var requeest = $.ajax({
-    url: "https://obscure-tundra-54269.herokuapp.com/bar-food",
-    type: "GET",
-    data: "json"
-  }).done(function(requeest) {
-    $(".menu").html()
-  })
-})
-function initMap() {
-  var options = {
-    zoom: 15,
-    center: { lat: 36.1699, lng: -115.1398 }
-  }
-  var map = new google.maps.Map(document.getElementById("map"), options)
+$(document).ready(function(){
+  $('#menu').on('load',function(e){
+    e.preventDefault()
+  var app = data.appetizers
+  var entre = data.entre 
+  var des = data.desserts
+    
 
-  var marker = new google.maps.Marker({
-    postion: { lat: 36.1699, lng: -115.1398 },
-    map: map,
-    title: "NBW!"
+  $.get('https://obscure-tundra-54269.herokuapp.com/bar-food' + app).done(function(data) {
+     const result = data.result[0]
+  const price = result.price
+  const name = result.name
+  const description = result.description
+  const extra = result.extra
+    
+     const html = $('appetizers').map(item =>{
+      
+      `
+      <p class="appname">name: ${name}</p>
+      <p class="apppri">price: ${price}</p>
+      <p class="appdescr">description: ${description}</p>
+      <p class="appext">extra: ${extra}<p>
+  `
+  console.log(html)
+    }).join('')
+    return $('.appertizers').html(html)
+ 
   })
-  marker.setMap(map)
-}
+}) 
+})
+  // const html = `
+  //   price: ${price},
+  //   name: ${name},
+  //   description: ${description},
+  //   extra: ${extra}
+  // `
+  // $('#appetizers').html(html)
+  //  app.map(item =>{
+  //     `
+  //     <p class="">${name}</p>
+  //     <p class="apppri">${price}</p>
+  //     <p class="appdescr">${description}</p>
+  //     <p class="appext">${extra}</p>
+  //   `
+
+// .join('')
+
+
+
+
 
 var slideIndex = 1
 showDivs(slideIndex)
@@ -53,25 +80,4 @@ function showDivs(n) {
   x[slideIndex - 1].style.display = "block"
   dots[slideIndex - 1].className += " w3-white"
 }
-
-$(document).ready(function(){
-    var requesst = $.ajax({
-        url: 'https://obscure-tundra-54269.herokuapp.com/bar-food',
-        type: 'GET',
-        data:['appestizers','entrees','desserts']
-    })   
-        .done(function(requeest){
-            $('.menu').html()
-        })
-    
-    })
-    // function initMap(){
-    //     var options = {
-    //       zoom: 15,
-    //       center:{lat:36.1699, lng: -115.1398}
-    //       }
-    //       var map = new google.maps.Map(document.getElementById("map"),options);
-    
-    //         marker.setMap(map)
-    //   }
 

@@ -13,11 +13,19 @@ html {
 /* contain */
 
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 0;
+  align-content: center;
   width: auto;
+
   height: 3000px;
   background-color: #717171;
   background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%);
+
+  position: static;
+
 }
 a:link {
   text-decoration: none;
@@ -29,7 +37,7 @@ a:visited {
 /* header */
 header {
   width: auto;
-  height: 800px;
+  height: 765px;
   margin: 0;
   background-image: url(./imgs/barbar5.png);
 }
@@ -142,6 +150,7 @@ header {
   cursor: pointer;
 }
 /* menu-bar */
+
 .menu-bar {
   display: flex;
   justify-content: space-evenly;
@@ -177,6 +186,7 @@ header {
 #BAR-MENU:hover a {
   color: white;
   cursor: pointer;
+
   font-size: 21px;
 }
 #BAR-STORY:hover a {
@@ -194,40 +204,56 @@ header {
   color: white;
   cursor: pointer;
   font-size: 21px;
+
+ 
+
 }
 
 /* /////////////// */
 /* ///BODY TABS/// */
 /* ////////////////*/
 
-#mainbody {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  position: relative;
+
+#mainbody{
+
+position: relative;
+background-color: #949494;
+background-image: linear-gradient(180deg, #949494 0%, #ff4a4a 91%);
+height: 5000px;
+
 }
 .contactus {
   position: absolute;
   display: flex;
-  right: 590px;
-  top: 20px;
+
+  left: 530px;
+  top:20px;
+
   width: 700px;
   text-align: center;
   color: white;
   font-size: 22px;
-  line-height: 20px;
-  justify-content: space-between;
+
+
+  line-height: 20px;;
+  justify-content: space-around;
   margin: 15px;
   background: black;
+  border-radius: 20px;
+  border: 2px  #FF959C  solid;
+  ;
+
 }
+
+/* OUR STORY */
+/* ///////// */
 .ourstory {
   background-image: url("./imgs/alcohol-1961542_1920.jpg");
   background-size: 1000px 600px;
   background-color: rgba(255, 255, 250, 0.8);
   background: cover;
   margin: 20px 0px;
-  border: 1px solid black;
+  border: 2px solid black;
   height: 400px;
   width: 1000px;
   text-align: center;
@@ -235,9 +261,12 @@ header {
   margin: 50px;
   position: absolute;
   display: flex;
-  top: 155px;
-  right: 390px;
+
+  top:255px;
+  left:150px;
+
   z-index: 3;
+  box-shadow: lightcoral 10px 10px 10px 10px;
 }
 .ourstoryhead {
   font-size: 40px;
@@ -251,36 +280,57 @@ header {
   color: #fadee0;
   letter-spacing: 2px;
 }
-#background {
+
+
+#background{
   z-index: 0;
   width: 900px;
-  height: 800px;
+  height:600px;
+
   position: absolute;
-  left: 100px;
-  top: 469px;
+  left:270px;
+  top: 869px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background: black;
 }
+/* MENU */
+/* ///// */
 #menu {
   border: 1px solid black;
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 800px;
   position: absolute;
+
   top: 615px;
 }
 
 .label {
   font-size: 20px;
+
+  top:1715px;
+  background-color: #717171;
+  background-image: linear-gradient(180deg, #717171 0%, #ff6a6a 100%); 
+
 }
+/* RESERVATIONS */
+/* //////////// */
 .reservations {
   display: flex;
   flex-direction: column;
   position: absolute;
-  bottom: -440px;
-  left: -16px;
   align-items: flex-start;
   width: 500px;
   height: auto;
-  border: 1px black solid;
-  background: white;
+
+  border: 2px black solid;
+  background: #E5B5B8;
+  top: 2700px;
+}
+
+.label {
+  font-size: 20px;
+
 }
 input {
   height: 30px;
@@ -289,6 +339,7 @@ input {
   border: 2px solid black;
   font-size: 16px;
   outline: none;
+  background: none;
 }
 .res {
   margin: 5px 0px 0px 15px;
@@ -301,7 +352,12 @@ input {
   height: 70px;
   width: 400px;
   margin: 5px;
-  border: 2px solid black;
+
+  border:2px solid black ;
+  background: none;
+  font-size:16px;
+  outline: none;
+
 }
 #seatpref {
   height: 30px;
@@ -310,24 +366,42 @@ input {
   background: none;
   font-size: 16px;
   outline: none;
+  border: 2px solid black;
+}
+.submit{
+  height: 30px;
+  width: 250px;
+  margin: 10px 5px;
+  background: none;
+  border: 2px solid black;
+  font-size: 20px;
 }
 
 /* /////////////// */
 /* //////MAP////// */
+
 .news {
   background-color: white;
   width: 500px;
   height: 700px;
 }
-#map {
+
+
+
+.map{
   position: absolute;
-  top: 2300px;
-  left: 23%;
+
   background: black;
   width: 900px;
   height: 405px;
   margin: 100px;
   border: 3px solid black;
+
+
+  top: 4200px;
+  left: 175px;
+
+
 }
 .realmap {
   border-right: 3px solid black;
@@ -338,18 +412,30 @@ input {
   height: 400px;
   z-index: 0;
 }
+/* ///////////// */
 /* ///GALLARY/// */
+
 .Gal-pics {
   display: flex;
   justify-content: center;
+
 }
 .mySlides {
   width: 1000px;
   height: 700 px;
+
+  position: absolute;
+  top: 5000px;
+  left:230px;
+}
+.mySlides {
+ width: 1000px;
+ height: 600px;
+
+
 }
 .w3box {
   widows: 100%;
-
   display: flex;
   justify-content: center;
 }
@@ -404,9 +490,11 @@ input {
   width: 30px;
   line-height: 80px;
 }
-
+/* /////// */
 /* FOOTER */
-footer {
+
+footer{
+
   height: 500px;
   background: white;
   display: flex;
