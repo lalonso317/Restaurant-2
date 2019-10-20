@@ -13,9 +13,32 @@ var html = `<div class="appetizers"> </div>`
       <p class="appdescr">description: ${ap.description}</p>
       <p class="appext">extra: ${ap.extra}<p>
   `
-  console.log(html)
     }).join('')
     $('.appetizers').html(html)
+  
+   var html2 = `<div class="entrees"> </div>`
+
+   html2 += entre.map(ap => {
+    return `
+    <p class="entrname">${ap.name}</p>
+    <p class="entpri">${ap.price}</p>
+    <p class="entdescr">${ap.description}</p>
+    <p class="entext">${ap.extra}</p>
+    `
+   }).join('')
+   $('.entrees').html(html)
+
+   var html3 = `<div class="desserts"></div>`
+
+   html3 += des.map(ap => {
+    return `
+    <p class="desname">${ap.name}</p>
+    <p class="despri">${ap.price}</p>
+    <p class="desdescr">${ap.description}</p>
+    <p class="desext">${ap.extra}</p>
+    `
+   }).join('')
+    $('.desserts').html(html)
   })
 }) 
  
