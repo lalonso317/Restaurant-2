@@ -12,7 +12,6 @@ var html = `<div class="appetizers"> </div>`
       <p class="appname"> ${ap.name}</p>
       <p class="apppri"> &dollar;${ap.price}</p>
       <p class="appdescr"> ${ap.description}</p>
-      <p class="appext">${ap.extra}<p>
   `
     }).join('')
     $('.appetizers').html(html)
@@ -24,7 +23,6 @@ var html = `<div class="appetizers"> </div>`
     <p class="entrname">${ap.name}</p>
     <p class="entpri"> ${ap.price}</p>
     <p class="entdescr">${ap.description}</p>
-    <p class="entext">${ap.extra}</p>
     `
    }).join('')
    $('.entrees').html(html_2)

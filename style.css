@@ -293,9 +293,11 @@ height: 4800px;
   font-family: fantasy;
   font-size: 36px;
   margin: 15px 0 0 0;
+
 }
 .appname, .entrname, .desname{
   font-size: 22px;
+  text-decoration: underline;
 }
 /* RESERVATIONS */
 /* //////////// */
