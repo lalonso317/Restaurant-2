@@ -2,44 +2,41 @@
 $(document).ready(function(){ 
   $.get('https://obscure-tundra-54269.herokuapp.com/bar-food').done(function(data) {
     var app = data.appetizers
-    var entre = data.entre 
+    var entree = data.entrees 
     var des = data.desserts
  
 var html = `<div class="appetizers"> </div>`
  
       html += app.map(ap => {
       return `
-      <p class="appname">name: ${ap.name}</p>
-      <p class="apppri">price: ${ap.price}</p>
-      <p class="appdescr">description: ${ap.description}</p>
-      <p class="appext">extra: ${ap.extra}<p>
+      <p class="appname"> ${ap.name}</p>
+      <p class="apppri"> &dollar;${ap.price}</p>
+      <p class="appdescr"> ${ap.description}</p>
   `
     }).join('')
     $('.appetizers').html(html)
   
-   var html2 = `<div class="entrees"> </div>`
+   var html_2 = `<div class="entrees"> </div>`
  
-   html2 += entre.map(ap => {
+   html_2 += entree.map(ap => {
     return `
     <p class="entrname">${ap.name}</p>
-    <p class="entpri">${ap.price}</p>
+    <p class="entpri"> &dollar;${ap.price}</p>
     <p class="entdescr">${ap.description}</p>
-    <p class="entext">${ap.extra}</p>
     `
    }).join('')
-   $('.entrees').html(html)
+   $('.entrees').html(html_2)
  
-   var html3 = `<div class="desserts"></div>`
+   var html3 = `<div class="desserts"> </div>`
  
    html3 += des.map(ap => {
     return `
     <p class="desname">${ap.name}</p>
-    <p class="despri">${ap.price}</p>
+    <p class="despri"> &dollar; ${ap.price}</p>
     <p class="desdescr">${ap.description}</p>
-    <p class="desext">${ap.extra}</p>
     `
    }).join('')
-    $('.desserts').html(html)
+    $('.desserts').html(html3)
   })
 }) 
  
