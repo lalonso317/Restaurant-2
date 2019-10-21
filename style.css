@@ -171,13 +171,16 @@ header {
 /* /////////////// */
 /* ///BODY TABS/// */
 /* ////////////////*/
- 
+
 #mainbody{
   position: relative;
   background-color: #949494;
 background-image: linear-gradient(180deg, #949494 0%, #ff4a4a 91%);
 height: 4800px;
  
+}
+.top{
+  position: relative;
 }
 .contactus{
   position: absolute;

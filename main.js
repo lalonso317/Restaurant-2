@@ -21,7 +21,7 @@ var html = `<div class="appetizers"> </div>`
    html_2 += entree.map(ap => {
     return `
     <p class="entrname">${ap.name}</p>
-    <p class="entpri"> ${ap.price}</p>
+    <p class="entpri"> &dollar;${ap.price}</p>
     <p class="entdescr">${ap.description}</p>
     `
    }).join('')
