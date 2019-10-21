@@ -15,11 +15,8 @@ html {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  align-content: center;
   width: auto;
-  position: static;
+  margin: auto;  
 }
 a:link{
   text-decoration: none;
@@ -30,7 +27,6 @@ a:visited{
 }
 /* header */
 header {
-  width: auto;
   height: 765px;
   margin: 0;
   background-image: url(./imgs/barbar5.png);
@@ -173,11 +169,12 @@ header {
 /* ////////////////*/
 
 #mainbody{
-  position: relative;
   background-color: #949494;
 background-image: linear-gradient(180deg, #949494 0%, #ff4a4a 91%);
 height: 4800px;
- 
+overflow: hidden;
+max-width: 100%; 
+position: relative;
 }
 .top{
   position: relative;
@@ -207,6 +204,7 @@ height: 4800px;
   background-color: #8191d1;
   background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
   text-align: center;
+  max-width: 700px;
  }
  /* DAILY SPECIAL */
  .daily{
@@ -307,7 +305,7 @@ height: 4800px;
 .reservations {
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: absolute;
   align-items: flex-start;
   width: 500px;
   height: auto;
